@@ -34,7 +34,7 @@ int main() {
         printf("Soma dos positivos: %d\n", somaTotal);
         printf("Media: %.2f\n", media);
     } else {
-        printf("Nenhum numero positivo foi inserido.\n");
+        printf("Nenhum numero positivo\n");
     }
 
     return 0;

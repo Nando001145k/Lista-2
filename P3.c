@@ -24,9 +24,9 @@ int main() {
     scanf("%d", &n);
 
     if (ehPerfeito(n) == 1) {
-        printf("Resultado: O numero %d EH perfeito!\n", n);
+        printf(" O numero %d EH perfeito!\n", n);
     } else {
-        printf("Resultado: O numero %d NAO eh perfeito.\n", n);
+        printf(" O numero %d NAO eh perfeito.\n", n);
     }
 
     return 0;

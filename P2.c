@@ -1,29 +1,33 @@
 #include <stdio.h>
 
 int somaMultiplos(int inicio, int fim, int k) {
-    int soma = 0;
-    for (int i = inicio; i <= fim; i++) {
-        if (i % k == 0) {
-            soma += i;
-        }
+
+    if (inicio > fim) {
+        return 0;
     }
-    return soma;
+
+    if (inicio % k == 0) {
+
+        return inicio + somaMultiplos(inicio + 1, fim, k);
+
+    } else {
+
+        return somaMultiplos(inicio + 1, fim, k);
+    }
 }
 
 int main() {
     int inicio, fim, k;
 
-    printf("Digite o valor de inicio: ");
+    printf("Digite o inicio: ");
     scanf("%d", &inicio);
-
-    printf("Digite o valor final: ");
+    printf("Digite o fim: ");
     scanf("%d", &fim);
-
-    printf("Digite o numero k (para somar os multiplos dele): ");
+    printf("Digite k: ");
     scanf("%d", &k);
 
     int total = somaMultiplos(inicio, fim, k);
-    printf("A soma dos multiplos de %d entre %d e %d eh: %d\n", k, inicio, fim, total);
+    printf("Resultado: %d\n", total);
 
     return 0;
 }

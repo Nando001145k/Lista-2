@@ -26,9 +26,9 @@ int main() {
     scanf("%d", &n);
 
     if (ehPalindromo(n)) {
-        printf("Sim! O numero %d eh um palindromo.\n", n);
+        printf(" O numero %d eh um palindromo.\n", n);
     } else {
-        printf("Nao. O numero %d nao eh palindromo.\n", n);
+        printf("O numero %d nao eh palindromo.\n", n);
     }
 
     return 0;

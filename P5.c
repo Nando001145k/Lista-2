@@ -23,10 +23,10 @@ int main() {
     scanf("%d", &n);
 
     if (n < 1) {
-        printf("Por favor, digite um numero maior ou igual a 1.\n");
+        printf("digite um numero maior ou igual a 1.\n");
     } else {
         int qtdPassos = passos(n);
-        printf("Passos necessarios para reduzir %d a 1: %d\n", n, qtdPassos);
+        printf("Passos necessarios  %d a 1: %d\n", n, qtdPassos);
     }
 
     return 0;
